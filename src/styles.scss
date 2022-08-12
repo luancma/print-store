@@ -1,0 +1,44 @@
+@import './components/carousel/styles';
+@import './components/reset';
+@import './components/font-awesome/styles';
+
+
+
+$base-background: #f1f1f1;
+
+body {
+	background-color: $base-background;
+}
+
+.container {
+	max-width: 1400px;
+	padding: 0rem 1.5rem;
+	height: 100%;
+	margin: auto;
+}
+
+.banner {
+	width: 100%;
+	height: 560px;
+	background: rgb(92, 165, 122);
+	background: linear-gradient(190deg, #5ca57a 40%, #f1f1f1 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+
+	& .menu-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content:center;
+		height: 100%;
+
+		.menu-list {
+			display:flex;
+			gap: 1rem;
+			list-style: none;
+			
+			li a {
+				cursor: pointer;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,59 @@
+Arguments: 
+  /usr/local/bin/node /opt/yarn-v1.22.19/bin/yarn.js install
+
+PATH: 
+  /project/home/pitcher-host/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/call-me-maybe/-/call-me-maybe-1.0.1.tgz: Request failed "503 Service Unavailable"
+      at ResponseError.ExtendableBuiltin (/opt/yarn-v1.22.19/lib/cli.js:696:66)
+      at new ResponseError (/opt/yarn-v1.22.19/lib/cli.js:802:124)
+      at Request.<anonymous> (/opt/yarn-v1.22.19/lib/cli.js:66215:16)
+      at Request.emit (node:events:527:28)
+      at Request.module.exports.Request.onRequestResponse (/opt/yarn-v1.22.19/lib/cli.js:141767:10)
+      at ClientRequest.emit (node:events:527:28)
+      at HTTPParser.parserOnIncomingClient (node:_http_client:631:27)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17)
+      at HTTPParser.execute (<anonymous>)
+      at TLSSocket.socketOnData (node:_http_client:494:22)
+
+npm manifest: 
+  {
+    "name": "vanilla",
+    "version": "1.0.0",
+    "description": "JavaScript example starter project",
+    "main": "index.html",
+    "scripts": {
+      "start": "parcel index.html --open",
+      "sass-compile": "sass --watch ./src/styles.scss ./src/public/css/styles.css",
+      "build": "parcel build index.html"
+    },
+    "dependencies": {
+      "concurrently": "7.3.0",
+      "parcel-bundler": "^1.6.1",
+      "sass": "1.54.4"
+    },
+    "devDependencies": {
+      "@babel/core": "7.2.0",
+      "typescript": "4.4.4"
+    },
+    "resolutions": {
+      "@babel/preset-env": "7.13.8"
+    },
+    "keywords": ["javascript", "starter"]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
