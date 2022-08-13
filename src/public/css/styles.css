@@ -10398,7 +10398,10 @@ body {
 }
 .menu-wrapper .menu-list {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0rem 1rem;
+  max-width: 26.5rem;
   list-style: none;
 }
 .menu-wrapper .menu-list li a {
