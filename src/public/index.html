@@ -1,5 +1,4 @@
 <html>
-
 	<head>
 		<title>PDDDKSODAKO</title>
 		<link rel="stylesheet" href="css/styles.css" />
@@ -8,23 +7,28 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap"
 					rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
-	<body>
+	<body onload="addInitAnimation()">
 		<div class="banner">
+			<div class="image-wrapper"> <img class="image-element" src="./logo_transparent.png"></div>
 			<div class="menu-wrapper"> 
 				<ul class="menu-list">
-					<li>Item 1<li>
-					<li>Item 1<li>
-					<li>Item 1<li>
-					<li>Item 1<li>
-					<li>Item 1<li>
-				</ul>
+					<li>Menu 1</li>
+					<li>Menu 2</li>
+					<li>Menu 3</li>
+					<li>Menu 4</li>
 			</div>
 		</div>
 		<main class="container">
 		</main>
 	</body>
-	<script src="./src/index.ts"></script>
-
+	<script>
+		const imgElement = document.querySelector(".image-element");
+				const addInitAnimation = () => {
+							imgElement.classList.add("showAnimation");
+						}
+				document.addEventListener("load", addInitAnimation)
+	</script>
 </html>
