@@ -14,5 +14,3 @@ You need to install [Node](https://github.com/luancma/print-store) and [Yarn](ht
 
 
 
-
-# OPPAIS IS LOVE

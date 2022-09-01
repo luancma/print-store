@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap");
 .slider {
   width: 100%;
   max-width: 1128px;
@@ -10416,6 +10417,68 @@ body {
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+#servicos {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+#servicos .title {
+  margin-bottom: 25px;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2509803922);
+}
+#servicos .cards-contain {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+#servicos .cards-contain .card {
+  box-sizing: border-box;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+#servicos .cards-contain .card img {
+  margin: center;
+  width: 100%;
+  height: auto;
+}
+#servicos .cards-contain .card .info {
+  padding: 1.1rem 15px;
+  background-color: #fff;
+}
+#servicos .cards-contain .card .info h3 {
+  text-align: center;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#servicos .cards-contain .card .info p {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #servicos .cards-contain .card {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 576px) {
+  #servicos .cards-contain .card {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 15px;
   }
 }
 
