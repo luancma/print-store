@@ -7,7 +7,7 @@
   "private": false,
   "scripts": {
     "build": "concurrently  \"yarn sass-build\" \"yarn start\"",
-    "sass-build": "sass ./src/styles/styles.scss ./src/public/css/styles.css",
+    "sass-build": "sass --update ./src/styles/styles.scss ./src/public/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/index.js",
     "sass-compile": "sass --watch ./src/styles/styles.scss ./src/public/css/styles.css",
