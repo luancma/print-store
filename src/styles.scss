@@ -1,12 +1,12 @@
-@import "./components/carousel/styles";
-@import "./components/reset";
-@import "./components/font-awesome/styles";
+@import './components/carousel/styles';
+@import './components/reset';
+@import './components/font-awesome/styles';
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 $base-background: #f1f1f1;
-$font-inter: "Inter", Arial, Helvetica, sans-serif;
-$font-roboto: "Roboto", Arial, Helvetica, sans-serif;
+$font-inter: 'Inter', Arial, Helvetica, sans-serif;
+$font-roboto: 'Roboto', Arial, Helvetica, sans-serif;
 
 body {
   box-sizing: border-box;
@@ -84,7 +84,7 @@ body {
 .category-title {
   font-family: $font-inter;
   margin-bottom: 1.5rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2rem;
   font-weight: 700;
   text-shadow: 0px 4px 4px #00000040;
