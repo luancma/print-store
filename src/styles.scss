@@ -1,23 +1,23 @@
 @import './components/carousel/styles';
 @import './components/reset';
 @import './components/font-awesome/styles';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap');
-
-$base-background: #f1f1f1;
-$font-inter: 'Inter', Arial, Helvetica, sans-serif;
-$font-roboto: 'Roboto', Arial, Helvetica, sans-serif;
+@import './components/mixins.scss';
+@import './components/variables.scss';
 
 body {
   box-sizing: border-box;
   background-color: $base-background;
   font-family: $font-inter;
+  color: $base-black;
 }
 
 .container {
   padding: 0rem 1.5rem;
   margin: auto;
-  height: 100%;
-  max-width: 1400px;
+  max-width: 36rem;
+  @media (min-width: 769px) {
+    max-width: 124rem;
+  }
 }
 
 .banner {
@@ -60,7 +60,13 @@ body {
     list-style: none;
 
     li a {
+      text-decoration: none;
+      font-weight: 700;
       cursor: pointer;
+
+      &:visited {
+        color: $base-black;
+      }
     }
   }
 }
@@ -76,34 +82,42 @@ body {
   }
 }
 
-.product-title {
-  text-transform: uppercase;
-}
-
 .category-title {
   font-family: $font-inter;
   margin-bottom: 1.5rem;
   font-family: 'Inter', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  text-shadow: 0px 4px 4px #00000040;
+  text-shadow: 0 15px 30px rgba(54, 52, 53, 0.11),
+    0 5px 15px rgba(54, 52, 53, 0.08);
+
+  @media (min-width: 769px) {
+    font-size: 2rem;
+  }
 }
 
 .cards-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   gap: 1rem;
 
   .card {
+    border-radius: 0.5rem;
+    @include shadow();
+
     img {
+      border-radius: 0.5rem 0.5rem 0rem 0rem;
       margin: center;
       width: 100%;
       height: auto;
     }
 
     .card-details {
-      padding: 1.1rem 15px;
+      padding: 1rem;
       background-color: #fff;
+      color: $base-black;
+      border-radius: 0rem 0rem 0.5rem 0.5rem;
       h3 {
         text-align: center;
         font-weight: bold;
@@ -112,6 +126,11 @@ body {
       }
       p {
         text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
       }
     }
   }

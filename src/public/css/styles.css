@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap');
 .slider {
   width: 100%;
   max-width: 1128px;
@@ -10477,13 +10478,18 @@ body {
   box-sizing: border-box;
   background-color: #f1f1f1;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: rgb(54, 52, 53);
 }
 
 .container {
   padding: 0rem 1.5rem;
   margin: auto;
-  height: 100%;
-  max-width: 1400px;
+  max-width: 36rem;
+}
+@media (min-width: 769px) {
+  .container {
+    max-width: 124rem;
+  }
 }
 
 .banner {
@@ -10524,7 +10530,12 @@ body {
   list-style: none;
 }
 .menu-wrapper .menu-list li a {
+  text-decoration: none;
+  font-weight: 700;
   cursor: pointer;
+}
+.menu-wrapper .menu-list li a:visited {
+  color: rgb(54, 52, 53);
 }
 
 @keyframes showAnimation {
@@ -10537,32 +10548,43 @@ body {
     opacity: 1;
   }
 }
-.product-title {
-  text-transform: uppercase;
-}
-
 .category-title {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   margin-bottom: 1.5rem;
   font-family: 'Inter', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2509803922);
+  text-shadow: 0 15px 30px rgba(54, 52, 53, 0.11),
+    0 5px 15px rgba(54, 52, 53, 0.08);
+}
+@media (min-width: 769px) {
+  .category-title {
+    font-size: 2rem;
+  }
 }
 
 .cards-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   gap: 1rem;
 }
+.cards-container .card {
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(54, 52, 53, 0.1),
+    0 1px 2px -1px rgba(54, 52, 53, 0.1);
+}
 .cards-container .card img {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
   margin: center;
   width: 100%;
   height: auto;
 }
 .cards-container .card .card-details {
-  padding: 1.1rem 15px;
+  padding: 1rem;
   background-color: #fff;
+  color: rgb(54, 52, 53);
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 .cards-container .card .card-details h3 {
   text-align: center;
@@ -10572,6 +10594,11 @@ body {
 }
 .cards-container .card .card-details p {
   text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 @media (min-width: 769px) {
   .cards-container {

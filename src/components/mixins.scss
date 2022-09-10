@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+@mixin shadow($size: 0) {
+  @if $size == '1' {
+    box-shadow: 0 4px 6px -1px $base-black-10, 0 2px 4px -2px $base-black-10;
+  }
+  @if $size == '2' {
+    box-shadow: 0 10px 15px -3px $base-black-10, 0 4px 6px -4px $base-black-10;
+  }
+  @if $size == 2 {
+    box-shadow: 0 20px 25px -5px $base-black-10, 0 8px 10px -6px $base-black-10;
+  } @else {
+    box-shadow: 0 1px 3px 0 $base-black-10, 0 1px 2px -1px $base-black-10;
+  }
+}
