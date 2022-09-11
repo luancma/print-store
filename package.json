@@ -6,10 +6,12 @@
   "type": "module",
   "private": false,
   "scripts": {
+    "build": "concurrently  \"yarn sass-build\" \"yarn start\"",
+    "sass-build": "sass ./src/styles/styles.scss ./src/public/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node ./src/index.js",
+    "start": "node ./src/index.js",
     "sass-compile": "sass --watch ./src/styles/styles.scss ./src/public/css/styles.css",
-    "start": "concurrently  \"yarn sass-compile\" \"yarn dev\"",
+    "dev": "concurrently  \"yarn sass-compile\" \"yarn dev\"",
     "postinstall": "husky install",
     "format": "yarn prettier --write $(git diff --name-only --diff-filter d | grep '.\\.js$' | xargs)"
   },
