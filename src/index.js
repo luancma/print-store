@@ -1,4 +1,4 @@
-const liveServer = require('live-server')
+import liveServer from 'live-server'
 
 const params = {
   ignore: 'scss,my/templates', // comma-separated string for paths to ignore
