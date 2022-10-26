@@ -10483,4 +10483,36 @@ body {
   text-align: center;
 }
 
+footer {
+  background: #585858;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+footer a {
+  color: #fff;
+}
+footer .logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+footer .menu {
+  display: flex;
+  margin-bottom: 15px;
+}
+footer .menu li {
+  margin-right: 10px;
+}
+footer .social-icons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+footer .rights {
+  margin-bottom: 30px;
+}
+
 /*# sourceMappingURL=styles.css.map */
